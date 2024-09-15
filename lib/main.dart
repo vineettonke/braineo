@@ -1,3 +1,4 @@
+import 'package:braineo/statefull_widget.dart';
 import 'package:braineo/views/RegisterView.dart';
 import 'package:flutter/material.dart';
 import 'package:braineo/views/LoginView.dart';
@@ -11,7 +12,7 @@ void main() {
       colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       useMaterial3: true,
     ),
-    home: const RegisterView(),
+    home: BraineoWidget(),
   ));
 }
 

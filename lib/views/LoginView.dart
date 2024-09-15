@@ -1,3 +1,4 @@
+import 'package:braineo/views/ProfileView.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -78,10 +79,7 @@ class _LoginViewState extends State<LoginView> {
                         }
                         Navigator.push(
                           context,
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => ProfileView())),
+                          MaterialPageRoute(builder: (context) => MyApp()),
                         );
                       },
                       child: const Text('Login')),
